@@ -4,7 +4,8 @@
 #include<math.h>
 
 int main()
-{int i,t,estratto,cond;
+{
+ int i,t,estratto,cond;
  int ar[90];
  
  srand(time(NULL));
@@ -20,8 +21,10 @@ int main()
  ar[estratto-1]=estratto;
  
   for(i=0;i<9;i++)
-  {for(t=0;t<10;t++)
-   {printf("%d| ", ar[i*10+t]);
+  {
+   for(t=0;t<10;t++)
+   {
+    printf("%d| ", ar[i*10+t]);
    }
    printf("\n");
   }
@@ -37,7 +40,8 @@ int main()
   ar[estratto-1]=estratto;
 
    for(i=0;i<9;i++)
-   {for(t=0;t<10;t++)
+   {
+    for(t=0;t<10;t++)
     {printf("%d| ", ar[i*10+t]);
     }
     printf("\n");
